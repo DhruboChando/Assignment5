@@ -1,0 +1,49 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="360dp"
+    android:layout_height="220dp"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    app:cardPreventCornerOverlap="false"
+    >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Background Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_event_image"
+            />
+
+        <!-- Overlay Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sample Text"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_gravity="top|start"
+            android:background="#66000000"
+            android:padding="8dp"
+            android:layout_margin="8dp"
+            android:id="@+id/tv_company_name"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="40dp"
+            android:src="@drawable/arrow_symbol"
+            android:background="@android:color/transparent"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="8dp"
+            android:id="@+id/ib_event_details"
+            />
+
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>
